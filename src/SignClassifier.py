@@ -6,7 +6,7 @@ class SignClassifier():
     def __init__(self):
         # self.__model = tf.keras.models.load_model('classifier/service/bin/saved_model/alf_gray')
         # self.__model = tf.saved_model.load('/home/lakcra/Desktop/dactilologiaLSM_microservices/SignClassificationService/classifier/service/bin/saved_model/exported_model')
-        self.__model = tf.keras.models.load_model('/home/lara/Documents/lsm/LettersPapper/service/bin/new_model2.keras')
+        self.__model = tf.keras.models.load_model('/home/lara/Documents/lsm/LettersPapper/LSM-alphabet-classification/bin/new_model2.keras')
         
         self.__dictOneHot = {0: 'a',
                             1: 'b',

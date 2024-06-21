@@ -1,6 +1,6 @@
 import sys
 sys.path.append('../../')
-sys.path.insert(0, '/home/lara/Documents/lsm/LettersPapper/service/src/')
+sys.path.insert(0, '/home/lara/Documents/lsm/LettersPapper/LSM-alphabet-classification/src')
 from src.FileLoader import FileLoader
 from src.Hand import Hand
 from src.HandsDetectorMP import HandsDetector
@@ -41,4 +41,4 @@ print('#######Image preprocessing test#############')
 fr.run('imageTesting.jpg')
 
 print('\n#######Video preprocessing test#############')
-fr.run('videoTesting_LL2.mp4')
+fr.run('videoTesting.mp4')
