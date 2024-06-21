@@ -1,0 +1,1 @@
+This functional requirement test FileLoader behavior which has to read images and videos as inpput, the output will be a list of frames.
