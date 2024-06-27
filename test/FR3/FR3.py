@@ -4,13 +4,13 @@ sys.path.insert(0, '/home/lara/Documents/lsm/LettersPapper/LSM-alphabet-classifi
 from src.FileLoader import FileLoader
 from src.Hand import Hand
 from src.HandsDetectorMP import HandsDetector
-from src.SignClassifier import SignClassifier
+from src.StaticSignClassifier import StaticSignClassifier
 
 class FR1():
     def __init__(self):
         self.__path = '../media/'
         self.__handsDetector = HandsDetector()
-        self.__classifier = SignClassifier()
+        self.__classifier = StaticSignClassifier()
 
     def run(self, fileName):
         fl = FileLoader()

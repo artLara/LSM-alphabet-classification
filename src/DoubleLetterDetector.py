@@ -1,6 +1,6 @@
 
 class DoubleLetterDetector():
-    def __init__(self, m0_hand=None, tolerance = 0.3, MAXKFRAMES=5):
+    def __init__(self, m0_hand=None, tolerance = 0.5, MAXKFRAMES=5):
         self.__m0_hand = m0_hand #P sign
         self.__tolerance = tolerance
         self.__MAXKFRAMES = MAXKFRAMES
@@ -8,7 +8,7 @@ class DoubleLetterDetector():
         self.__moving = False
         self.__leter = ''
         self.__listOfLetters = set(['A','B','C','D','E','F','G','H','I','L','M',
-                                    'N','O','P','Q','R','S','T','U','V','W','Y'])
+                                    'N','O','P','R','S','T','U','V','W','Y'])
 
     def getLetter(self):
         return self.__leter

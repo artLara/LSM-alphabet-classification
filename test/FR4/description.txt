@@ -1,0 +1,3 @@
+This functional requirement test SignClassifier class with differents letters.
+Input: video or image
+Output: letter
