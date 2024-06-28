@@ -32,5 +32,5 @@ class Controller():
     
     def generateWindow(self, hands, ind):
         start = ind
-        end = max(len(hands), ind+self.__MAX_FRAMES)
+        end = min(len(hands), ind+self.__MAX_FRAMES)
         return hands[start:end]

@@ -26,4 +26,4 @@ print('#######Image preprocessing test#############')
 fr.run('imageTesting.jpg')
 
 print('\n#######Video preprocessing test#############')
-fr.run('videoTesting.mp4')
+fr.run('videoTesting_LL.mp4')

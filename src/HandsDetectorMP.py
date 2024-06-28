@@ -5,7 +5,7 @@ import numpy as np
 from Hand import Hand
 
 class HandsDetector():
-    def __init__(self, confidenseMP = 0.5, offsetBoundingBox = 50):
+    def __init__(self, confidenseMP = 0.5, offsetBoundingBox = 0):
         self.__offsetBoundingBox = offsetBoundingBox
         self.mp_hands = mp.solutions.hands
         # For static images:

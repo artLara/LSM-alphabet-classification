@@ -6,17 +6,20 @@ class SignClassifier():
         self.__doubleLetterDetector = DoubleLetterDetector()
 
     def classify(self, hands):
+        # print(len(hands))
+        # print('Checking:', end='')
         letterHand = hands[0]
         for hand in hands:
             if self.__doubleLetterDetector.detect(hand):
-                print('DOUBLE LETTER DETECTED!!!!!')
                 letterHand.doubleLetter()
                 break
 
-            if self.__kLetterDetector.detect(hand):
-                letterHand.setLetter('k')
-                break
 
+            # if self.__kLetterDetector.detect(hand):
+            #     letterHand.setLetter('k')
+            #     break
+        
+        # print(' wbb: {}'.format(hands[0].getWidthBoundingBox()))
         return letterHand
 
             
