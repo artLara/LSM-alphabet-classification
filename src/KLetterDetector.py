@@ -25,7 +25,7 @@ class KLetterDetector():
         self.__moving = False
 
     def detect(self, k):
-        if not self.__moving and k.getLetter() == 'P':
+        if not self.__moving and k.getLetter() == 'p':
             self.startDetection(k)
             return False
 

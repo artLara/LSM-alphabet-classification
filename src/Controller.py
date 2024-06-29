@@ -9,7 +9,7 @@ class Controller():
         self.__staticSignClassifier = StaticSignClassifier()
         self.__signClassifier = SignClassifier()
 
-    def run(self, frames):
+    def run(self, frames, verbose=False):
         hands = []
         for frame in frames:
             hand  = self.__handsDetector.detect(frame)
@@ -24,7 +24,8 @@ class Controller():
         #Calling FinalClassifier
         best = ('', 0)
         for ind in range(len(hands)):
-            hand = self.__signClassifier.classify(self.generateWindow(hands, ind))
+            hand = self.__signClassifier.classify(self.generateWindow(hands, ind),
+                                                  verbose=verbose)
             if hand.getSMValue() > best[1]:
                 best = (hand.getLetter(), hand.getSMValue())
 
