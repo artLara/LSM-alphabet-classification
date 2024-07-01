@@ -38,13 +38,13 @@ class StaticSignClassifier():
     def classify(self, pattern):
         res = self.__model.predict(pattern, verbose=0)
         # print(res)
-        y_p, index_dict, sm_value = self.getClass(res, self.__dictOneHot)
+        y_p, index_dict, sm_value = self.getClass(res)
         return y_p, sm_value
 
-    def getClass(self, x, dictOneHot):
+    def getClass(self, x):
         index, sm_value = self.getClassIndex(x)
         # print(ord(dictOneHot[index]) - ord('A'))
-        return dictOneHot[index], index, sm_value
+        return self.__dictOneHot[index], index, sm_value
 
     def getClassIndex(self, x):
         for vector in x:
@@ -53,3 +53,6 @@ class StaticSignClassifier():
             for index, val in enumerate(vector):
                 if maxValue == val:
                     return index, maxValue
+                
+    def getDictOneHot(self):
+        return self.__dictOneHot

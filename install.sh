@@ -5,3 +5,4 @@ pip install opencv-python
 pip install filetype
 pip install mediapipe
 pip install tensorflow
+pip install -U scikit-learn
