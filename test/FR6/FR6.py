@@ -11,7 +11,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score
 import numpy as np
 
-class FR5():
+class FR6():
     def __init__(self):
         self.__path = '../media/'
         self.__handsDetector = HandsDetector()

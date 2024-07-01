@@ -1,0 +1,3 @@
+This functional requirement produce a confusion matrix and metrics of static signs.
+Input: normalized landmarks as numpy array of testing dataset
+Output: metrics and confussion matrix

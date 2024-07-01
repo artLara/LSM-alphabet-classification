@@ -1,0 +1,3 @@
+This functional requirement produce a confusion matrix and metrics of dynamic signs.
+Input: dynamic sign videos
+Output: metrics and confussion matrix
