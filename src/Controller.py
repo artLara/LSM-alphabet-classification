@@ -19,7 +19,9 @@ class Controller():
                 hand.setLetter(letter)
                 hand.setSMValue(sm_value)
                 hands.append(hand)
-            pass
+
+        if len(hands) == 0:
+            return '-'
 
         #Calling FinalClassifier
         best = ('', 0)
